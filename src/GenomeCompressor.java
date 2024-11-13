@@ -28,7 +28,7 @@ public class GenomeCompressor {
     public static void compress()
     {
         String string = BinaryStdIn.readString();
-        strLength = string.length();
+        int strLength = string.length();
 
         for (int i = 0; i < strLength; i++)
         {
