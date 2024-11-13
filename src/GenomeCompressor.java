@@ -20,6 +20,7 @@
 public class GenomeCompressor {
 
     public static final int BITS_PER_CHAR = 2;
+    public static final int BITS_PER_LENGTH_STORAGE = 13;
 
     /**
      * Reads a sequence of 8-bit extended ASCII characters over the alphabet
@@ -27,9 +28,15 @@ public class GenomeCompressor {
      */
     public static void compress()
     {
+        // Get the initial string from the file.
         String string = BinaryStdIn.readString();
+        // Store the length of the string.
         int strLength = string.length();
 
+        // Write the length of the string at the start of the compressed file with a given number of bits.
+        BinaryStdOut.write(strLength, BITS_PER_LENGTH_STORAGE);
+
+        // Then go through each character in the string and write it to the compressed file with a given # of bits.
         for (int i = 0; i < strLength; i++)
         {
             BinaryStdOut.write(mapChar(string.charAt(i)), BITS_PER_CHAR);
@@ -43,11 +50,14 @@ public class GenomeCompressor {
      */
     public static void expand()
     {
-        while (!BinaryStdIn.isEmpty())
+        // Read the previously written length of the string that we put at the beginning of the compressed file.
+        int length = BinaryStdIn.readInt(BITS_PER_LENGTH_STORAGE);
+
+        // Go through the binary file for that length and write it to the new file.
+        for (int i = 0; i < length; i++)
         {
             BinaryStdOut.write(reverseMapChar(BinaryStdIn.readChar(BITS_PER_CHAR)));
         }
-        // TODO: complete the expand() method
 
         BinaryStdOut.close();
     }
