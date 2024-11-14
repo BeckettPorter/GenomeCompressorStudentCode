@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b73ab661-840a-4b64-b072-3764519be013" name="Changes" comment="Oops messed up an int in my last commit">
-      <change afterPath="$PROJECT_DIR$/src/virusCheck.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/virusCheck.txt" afterDir="false" />
+    <list default="true" id="b73ab661-840a-4b64-b072-3764519be013" name="Changes" comment="Got it to work">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WORK_LOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/WORK_LOG.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GenomeCompressor.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenomeCompressor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GenomeCompressor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GenomeCompressor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/genomeCheck.bin" beforeDir="false" afterPath="$PROJECT_DIR$/src/genomeCheck.bin" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,13 +83,22 @@
       <option name="project" value="LOCAL" />
       <updated>1731463306723</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Got it to work">
+      <option name="closed" value="true" />
+      <created>1731523412175</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731523412175</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Started working on it and got git bash working in the terminal" />
     <MESSAGE value="Oops messed up an int in my last commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Oops messed up an int in my last commit" />
+    <MESSAGE value="Got it to work" />
+    <option name="LAST_COMMIT_MESSAGE" value="Got it to work" />
   </component>
 </project>

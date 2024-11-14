@@ -20,7 +20,7 @@
 public class GenomeCompressor {
 
     public static final int BITS_PER_CHAR = 2;
-    public static final int BITS_PER_LENGTH_STORAGE = 13;
+    public static final int BITS_PER_LENGTH_STORAGE = 16;
 
     /**
      * Reads a sequence of 8-bit extended ASCII characters over the alphabet
